@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Dussehra</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5e0c2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            color: #ff6347;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 0;
+            animation: fadeIn 3s ease-in-out infinite alternate;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 10px;
+            animation: floatText 3s ease-in-out infinite;
+        }
+
+        /* Animation for fading text */
+        @keyframes fadeIn {
+            from {
+                opacity: 0.1;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        /* Animation for moving text */
+        @keyframes floatText {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .fireworks {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://media.giphy.com/media/xTcf18eGV8qRF5bqLu/giphy.gif') no-repeat center;
+            background-size: cover;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Dussehra!</h1>
+        <h2>Wishing you peace, prosperity, and happiness.</h2>
+    </div>
+    <div class="fireworks"></div>
+</body>
+</html>
